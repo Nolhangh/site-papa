@@ -1,0 +1,119 @@
+/* Couleurs & Bases */
+:root {
+    --bleu-marine: #002D58;
+    --gris-clair: #969999;
+    --noir: #1D1D1B;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; color: var(--noir); line-height: 1.5; }
+
+/* Header & Nav */
+.top-bar {
+    background: var(--bleu-marine);
+    color: white;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.main-logo { height: 65px; width: auto; }
+
+nav ul { display: flex; list-style: none; align-items: center; }
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: var(--bleu-marine); font-weight: bold; font-size: 0.9rem; }
+
+.cta-nav {
+    background: var(--rouge-action);
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 75vh;
+    background: linear-gradient(rgba(0,45,88,0.5), rgba(0,45,88,0.5)), 
+                url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero-content h1 { color: white; font-size: 3.5rem; font-weight: 900; line-height: 1.1; }
+.hero-content .highlight { color: #fff; background: var(--rouge-action); padding: 0 10px; }
+.hero-content p { color: white; font-size: 1.3rem; margin: 20px 0; }
+
+.btn-red {
+    background: var(--rouge-action);
+    color: white;
+    padding: 18px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 16px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Grille de produits */
+.products-section { padding: 80px 5%; background: var(--gris-clair); text-align: center; }
+.divider { width: 60px; height: 5px; background: var(--rouge-action); margin: 20px auto 50px; }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    padding-bottom: 25px;
+    border-bottom: 4px solid var(--bleu-marine);
+    transition: 0.3s;
+}
+
+.product-card:hover { transform: translateY(-5px); }
+.img-placeholder { height: 250px; background-size: cover; background-position: center; margin-bottom: 20px; }
+.product-card h3 { margin-bottom: 15px; color: var(--bleu-marine); }
+.product-card a { color: var(--rouge-action); font-weight: bold; text-decoration: none; }
+
+footer { background: var(--bleu-marine); color: white; padding: 40px; text-align: center; }
+/* Styles Pages Annexes */
+.page-title { background: var(--bleu-marine); color: white; padding: 60px 5%; text-align: center; }
+
+.service-row { display: flex; align-items: center; gap: 50px; padding: 60px 10%; }
+.service-row.reverse { flex-direction: row-reverse; background: white; }
+.service-text { flex: 1; }
+.service-text h2 { color: var(--bleu-marine); margin-bottom: 15px; }
+.service-text ul { list-style: none; margin-top: 15px; }
+.service-img { flex: 1; height: 400px; background-size: cover; border-radius: 5px; }
+
+/* Styles Contact */
+.contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding: 80px 10%; background: var(--gris-clair); }
+.contact-info h2 { color: var(--bleu-marine); margin-bottom: 20px; }
+.info-box { background: white; padding: 25px; margin-top: 30px; border-left: 5px solid var(--rouge-action); }
+
+.contact-form { display: flex; flex-direction: column; gap: 15px; }
+.form-group { display: flex; gap: 10px; }
+.contact-form input, .contact-form select, .contact-form textarea { padding: 15px; border: 1px solid #ddd; border-radius: 3px; }
+.contact-form .btn-red { cursor: pointer; border: none; }

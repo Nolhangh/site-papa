@@ -6,20 +6,23 @@
     <title>Devis Gratuit | Le petit menuisier 46</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-<ul>
-    <li><a href="index.html">ACCUEIL</a></li>
-    <li><a href="services.html">NOS PRODUITS</a></li>
-    <li><a href="depannage.html">NOS DEPANNAGES</a></li>
-    <li><a href="contact.html" class="cta-nav">DEMANDER UN DEVIS</a></li>
-</ul>
 </head>
 <body>
+
     <header>
+        <div class="top-bar">
+            <span>📍 Lot (46) - Devis gratuit sous 48h</span>
+            <span>📞 Appelez-nous : 06 XX XX XX XX</span>
+        </div>
         <nav>
-            <div class="logo-area"><img src="logo.png" alt="Logo" class="main-logo"></div>
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="logo.png" alt="Le petit menuisier 46" class="main-logo">
+                </a>
+            </div>
             <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="services.html">NOS PRODUITS</a></li>
+                <li><a href="services.html">NOS SERVICES</a></li>
                 <li><a href="depannage.html">NOS DEPANNAGES</a></li>
                 <li><a href="contact.html" class="cta-nav">DEMANDER UN DEVIS</a></li>
             </ul>
@@ -29,11 +32,13 @@
     <section class="contact-container">
         <div class="contact-info">
             <h2>DEMANDE DE DEVIS GRATUIT</h2>
-            <p>Remplissez le formulaire, nous vous recontactons sous 48h pour étudier votre projet de menuiserie dans le Lot.</p>
+            <div class="divider-left"></div>
+            <p>Remplissez le formulaire ci-dessous. Nous vous recontactons sous **48h** pour étudier votre projet de menuiserie dans le Lot.</p>
+            
             <div class="info-box">
                 <p><strong>📞 Téléphone :</strong> 06 XX XX XX XX</p>
                 <p><strong>📧 Email :</strong> contact@lepetitmenuisier46.fr</p>
-                <p><strong>📍 Zone :</strong> Cahors, Gourdon, Figeac et alentours.</p>
+                <p><strong>📍 Zone d'intervention :</strong> Cahors, Gourdon, Figeac et alentours.</p>
             </div>
         </div>
 
@@ -48,6 +53,7 @@
                 <option value="fenetres">Fenêtres / Baies</option>
                 <option value="portail">Portail / Clôture</option>
                 <option value="porte">Porte d'entrée</option>
+                <option value="depannage">Dépannage urgent</option>
                 <option value="autre">Autre projet</option>
             </select>
             <textarea placeholder="Détails de votre projet (dimensions, matériaux souhaités...)" rows="5"></textarea>
@@ -55,6 +61,9 @@
         </form>
     </section>
 
-    <footer><p>&copy; 2026 Le petit menuisier 46</p></footer>
+    <footer>
+        <p>&copy; 2026 Le petit menuisier 46 - Réseau de confiance.</p>
+    </footer>
+
 </body>
 </html>
